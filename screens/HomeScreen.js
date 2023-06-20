@@ -17,9 +17,8 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView className='bg-white pt-3'>
-      <Text>
         {/* Header */}
-        <View className='flex-row pb-3 items-center mx-4 space-x-2 px-4'>
+        <View className='flex-row pb-3 items-center mx-4 space-x-2'>
           <Image
             source={{
               uri: "https://links.papareact.com/wru"
@@ -37,24 +36,24 @@ const HomeScreen = () => {
               <ChevronDownIcon size={20} color="#00CCBB" />
             </Text>
           </View>
-
           <UserIcon size={35} color="#00CCBB" />
         </View>
 
-        {/* Search */}
-        <View className='flex-row items-center space-x-2 pb-2 mx-4 px-4'>
-          <View className='flex-row flex-1 space-x-2 bg-gray-200 p-3'>
-            <MagnifyingGlassIcon size={20} color='gray'></MagnifyingGlassIcon>
-            <TextInput
-              placeholder='Restaurants and cuisines'
-              keyboardType='default'
-            ></TextInput>
-          </View>
-
-          <AdjustmentsVerticalIcon color="#00CCBB"></AdjustmentsVerticalIcon>
+      {/* Search */}
+      <View className='flex-row items-center space-x-2 pb-2 mx-4'>
+        <View className='flex-row flex-1 space-x-2 bg-gray-200 p-3'>
+          <MagnifyingGlassIcon size={20} color='gray'></MagnifyingGlassIcon>
+          <TextInput
+            placeholder='Restaurants and cuisines'
+            keyboardType='default'
+          ></TextInput>
         </View>
 
-        {/* Body */}
+        <AdjustmentsVerticalIcon color="#00CCBB"></AdjustmentsVerticalIcon>
+      </View>
+
+      {/* Body */}
+      <Text>
       </Text>
     </SafeAreaView>
   )
